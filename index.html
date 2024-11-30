@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Map Explorer</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Matemasie&family=Merienda:wght@300..900&family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="">
+    
+    <link rel="stylesheet" href="cgatgpt.css">
+</head>
+<body>
+    <div id="main">
+        <div id="left-sidebar">
+            <h2>Points</h2>
+            <ul id="point-list">
+                <!-- Points dynamically populated here -->
+            </ul>
+        </div>
+        <div id="map"></div>
+        <div id="right">
+            <div id="sidebar">
+                <div id="heading">
+                    <h2>Locations</h2>
+                </div>
+                <div id="sidebarcategory">                        
+                        <label for="category-select">Choose a Category:</label>
+                        <select id="category-select">
+                            <option value="all">All Categories</option>
+                        </select>
+                        <!-- <br> -->
+                 </div>
+                 <div id="sidebarstate">
+                        <label for="state-select">Choose a State:</label>
+                        <select id="state-select">
+                            <option value="">Select a State</option>
+                            <option value="alipurduar">Alipurduar</option>
+                            <option value="cooch_bihar">Cooch Bihar</option>
+                            <option value="darjeeling">Darjeeling</option>
+                            <option value="kalimpong">Kalimpong</option>
+                            <option value="jalpaiguri">Jalpaiguri</option>
+                            <option value="kurseong">Kurseong</option>
+
+                        </select>
+                 </div>
+            </div>
+            <div class="store-list">
+                <div class="info">
+                    <!-- Dynamic details appear here -->
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    
+    
+    <!-- All state tourist spot script  -->
+    <script src="alipurduar_tourist.js"></script>
+    <script src="coochbihar_tourist.js"></script>
+    <script src="darjiling_tourist.js"></script>
+    <script src="jalpaiguri_tourist.js"></script>
+    <script src="kalingpong_tourist.js"></script>
+    <script src="kurseong_tourist.js"></script>
+
+    <!-- All state HOTELS script  -->
+     <script src="alipurduar_hotels.js"></script>  
+     <script src="coochbihar_hotels.js"></script>
+     <script src="darjiling_hotels.js"></script>
+     <script src="kalingpong_hotels.js"></script>
+     <script src="jalpaiguri_hotels.js"></script>
+     <script src="kurseong_hotels.js"></script>
+
+     <!-- All state HOSPITALS script  -->
+      <script src="alipurduar_hospitals.js"></script>
+      <script src="coochbihar_hospitals.js"></script>
+      <script src="darjiling_hospitals.js"></script>      
+      <script src="kalingpong_hospitals.js"></script>
+      <script src="jalpaiguri_hospitals.js"></script>
+      <script src="kurseong_hospitals.js"></script>
+
+       <!-- All state medicalshop script  -->
+        <script src="alipurduar_medicalcenter.js"></script>
+        <script src="coochbihar_medicalcenter.js"></script>
+        <script src="darjiling_medicalscenter.js"></script>
+        <script src="kalingpong_medicalcenter.js"></script>
+        <script src="jalpaiguri_medicalcenter.js"></script>
+        <script src="kurseong_medicalcenter.js"></script>
+
+        <!-- All state ATM'S script  -->
+         <script src="alipurduar_atm.js"></script>
+         <script src="coochbihar_atm.js"></script>
+         <script src="darjiling_atm.js"></script>
+         <script src="kalingpong_atm.js"></script>
+         <script src="jalpaiguri_atm.js"></script>
+         <script src="kurseong_atm.js"></script>
+
+         <!-- All state RESTURENTS script  -->
+        <script src="alipurduar_resturent.js"></script>
+        <script src="coochbihar_resturent.js"></script>
+        <script src="darjiling_resturent.js"></script>
+        <script src="kalingpong_resturent.js"></script>
+        <script src="jalpaiguri_resturent.js"></script>
+        <script src="kurseong_resturent.js"></script>
+
+    <!-- <script src="map(6).js"></script> -->
+    <!-- <script src="cochtorist.js"></script> -->
+    <!-- <script src="update2.js"></script> -->
+    <script src="update(old).js"></script>
+</body>
+</html>
